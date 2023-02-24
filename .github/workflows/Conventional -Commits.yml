@@ -1,8 +1,10 @@
-name: Conventional Commits
+name: Conventional-Commits
 
 on:
-  pull_request:
-    branches: [ master ]
+  push:
+    branches:
+      - 'features/'
+      - 'hotfix/'
 
 jobs:
   build:
